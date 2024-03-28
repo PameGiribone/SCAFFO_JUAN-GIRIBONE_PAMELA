@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clinica Odontologica Back End</title>
+    <link rel="stylesheet" href="./style/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+</head>
+<body>
+<header>
+
+    <h1> <i class="fa-solid fa-tooth" style="color: #ffffff;"></i> <span>Clinica Odontológica Scaffo - Giribone</span></h1>
+
+</header>
+
+<nav>
+    <ul>
+        <li><a href="#registro-paciente">Registrar Paciente</a></li>
+        <li><a href="#registro-odontologo">Registrar Odontólogo</a></li>
+    </ul>
+</nav>
+<div class="container">
+    <section id="registro-paciente">
+        <h2>Registro de datos del Paciente</h2>
+        <form>
+            <input type="text" name="nombre" placeholder="Nombre" required><br>
+            <input type="text" name="apellido" placeholder="Apellido" required><br>
+            <input type="text" name="dni" placeholder="DNI" required><br>
+            <input type="date" name="fecha-ingreso" placeholder="Fecha de Ingreso" required><br>
+            <input type="text" name="calle" placeholder="Calle" required><br>
+            <input type="text" name="numero" placeholder="Numero" required><br>
+            <input type="text" name="localidad" placeholder="Localidad" required><br>
+            <input type="text" name="provincia" placeholder="Provincia" required><br>
+            <input type="submit" id="registrarPaciente" value="Registrar Paciente">
+            <div id="pacientesListados"></div>
+        </form>
+
+    </section>
+    <hr>
+    <section id="registro-odontologo">
+        <h2>Registro de Odontólogo</h2>
+        <form>
+            <input type="text" id="matricula" placeholder="Matrícula" required><br>
+            <input type="text" id="nombreOdontologo" placeholder="Nombre del Odontologo" required><br>
+            <input type="text" id="apellidoOdontologo"  placeholder="Apellido del Odontologo" required><br>
+            <input type="submit" id="registarOdontologo" value="Registrar Odontologo">
+            <div id="odontologosListados"></div>
+        </form>
+    </section>
+    <script src="./js/clinica.js"></script>
+</body>
+</html>
